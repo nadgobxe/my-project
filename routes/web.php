@@ -2,16 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Arr;
+use App\Models\Job;
 
-class Job {
-    public static function all() {
-        return [
-            ['title' => 'Software Engineer', 'company' => 'Tech Corp', 'id' => 1],
-            ['title' => 'Data Analyst', 'company' => 'Data Solutions', 'id' => 2],
-            ['title' => 'Web Developer', 'company' => 'Web Innovations', 'id' => 3],
-        ];
-    }
-}
 
 Route::get('/', function () {
     return view('welcome', [
